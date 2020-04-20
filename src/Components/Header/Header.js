@@ -1,40 +1,15 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-
 import Logo from '../../Elements/Logo/Logo';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+import tachyons from 'tachyons';
+import './Header.css';
 
 const Header = () => {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <Logo />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            My Weather
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
+      <header class="bg-black-90 sticky w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+        <nav class="f6 fw6 ttu tracked">
+          <a class="link dim white dib mr3" href="http://localhost:3000" title="Home">My Weather</a>
+        </nav>
+      </header>
   );
 }
 
