@@ -6,7 +6,7 @@ import tachyons from 'tachyons';
 
 const Logo = () => {
 	return (
-		<div className="br3 bw2 shadow-5">
+		<div className="ma2">
 			<Tilt className="Tilt br3 shadow-2" options={{ max : 55 }} style={{ height: 50, width: 50 }} >
 				<div className="Tilt-inner pa2"> 
 					<img alt='logo' src={sun}/>

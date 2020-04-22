@@ -1,23 +1,15 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: '25ch',
-    },
-  },
-}));
-
-const BasicTextFields = () => {
-	const classes = useStyles();
+const Inputfield = () => {
 	return (
-    <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="filled-basic" label="Filled" variant="filled" />
-    </form>
+    <div className='mt2 pa2'>
+      <input 
+        className='pa3 ba b--light-blue bg-lightest-blue' 
+        type='search' 
+        placeholder='Enter City'
+      />
+    </div>
   );
 }
 
-export default BasicTextFields;
+export default Inputfield;
