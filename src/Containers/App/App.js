@@ -33,7 +33,6 @@ class App extends Component {
         <SearchBox onChangeHandler = { this.searchBarHandler } />
       	<Card />
         <Footer />
-
       </div>
     );
   } 
