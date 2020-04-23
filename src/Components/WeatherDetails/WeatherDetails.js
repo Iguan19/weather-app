@@ -1,5 +1,4 @@
 import React from 'react';
-import tachyons from 'tachyons';
 
 import MyDate from './Date/Date';
 import Description from './Description/Description';

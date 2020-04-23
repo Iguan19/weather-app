@@ -1,5 +1,4 @@
 import React from 'react';
-import tachyons from 'tachyons';
 
 const Temperature = () => {
 	return(

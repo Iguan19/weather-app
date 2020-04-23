@@ -2,7 +2,6 @@ import React from 'react';
 import Tilt from 'react-tilt';
 import './Logo.css';
 import sun from './sun.png';
-import tachyons from 'tachyons';
 
 const Logo = () => {
 	return (
