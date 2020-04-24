@@ -3,14 +3,16 @@ import React from 'react';
 import InputField from '../../Elements/InputField/InputField';
 import Button from '../../Elements/Button/Button';
 
-const SearchBox = ({ onChangeHandler }) => {
+const SearchBox = (props) => {
 	return(
 		<div>
 			<InputField 
-				handleChange = { onChangeHandler }
-				value = { onChangeHandler.value }
+				handleChange = { props.onChangeHandler }
+				value = { props.onChangeHandler.value }
 			/>
-			<Button />
+			<Button 
+				handleClick = { props.onClickHandler }
+			/>
 		</div>
 	);
 }

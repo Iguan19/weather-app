@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = () => {
+const Button = (props) => {
 	return(
 		<div className="ph3">
   		<button 
@@ -8,6 +8,7 @@ const Button = () => {
   		name="searchSubmit" 
       type="submit" 
       position="onForm"
+      onClick={ props.handleClick }
   		>
   		Search
 			</button>
