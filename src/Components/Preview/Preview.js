@@ -1,28 +1,29 @@
 import React from 'react';
 import dateFormat from 'dateformat';
+import icon from './initialIcon.png';
 
 const now = new Date();
 
-const WeatherDetailsCard = (props) => {
+const Preview = () => {
 	return(
 		<div className="mw5 center bg-lightest-blue br3 pa3 pa4-ns mv3 ba b--black-10">
 		  <div className="tc">
 		    <img 
-		    	src={`http://openweathermap.org/img/wn/${props.data.icon}@2x.png`}
+		    	src={icon}
 		    	className="br-100 h4 w4 dib ba b--black-05 pa2" 
 		    	title="weather icon" 
-		    	alt='Icon not available'
+		    	alt='weather icon'
 		    />
 		  </div>
 		  <div>
 		  	<div>
-					<span className='f2 mb2'>{props.city}</span>
+					<span className='f2 mb2'>City</span>
 				</div>
 				<div>
-					<span className='f3 mb2'>{Math.round(props.data.temperature)} °C</span>
+					<span className='f3 mb2'>Temperature °C</span>
 				</div>
 				<div>
-					<span className="f5 fw4 gray mt0">{props.data.description}</span>
+					<span className="f5 fw4 gray mt0">Description available when a city is set</span>
 				</div>
 				<br/>
 				<div className="i f6">
@@ -33,6 +34,4 @@ const WeatherDetailsCard = (props) => {
 	);
 }
 
-export default WeatherDetailsCard;
-
-
+export default Preview;

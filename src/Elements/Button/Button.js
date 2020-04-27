@@ -10,7 +10,7 @@ const Button = (props) => {
       position="onForm"
       onClick={ props.handleClick }
   		>
-  		Search
+  		Set
 			</button>
 		</div>
 	);
