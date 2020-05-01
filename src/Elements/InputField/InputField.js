@@ -4,7 +4,7 @@ const Inputfield = ({ handleChange }) => {
 	return (
     <div className='mt2 pa2'>
       <input 
-        className='pa3 ba b--light-blue bg-lightest-blue' 
+        className='pa3 ba b--black-50 bg-near-white' 
         type='search' 
         placeholder='Enter City'
         onChange={ handleChange }

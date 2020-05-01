@@ -6,7 +6,6 @@ import WeatherDetailsCard from '../../Components/WeatherDetailsCard/WeatherDetai
 import ErrorNotice from '../../Components/ErrorNotice/ErrorNotice';
 import Preview from '../../Components/Preview/Preview';
 import './App.css';
-import { PacmanLoader } from "react-spinners";
 
 const APIKey = "3e0a1ade01bf9f4d59e46fa9515ee8d2";
 
@@ -21,7 +20,6 @@ class App extends Component {
         icon: ''
       },
       error: false,
-      loading: false
     }
   }
 
@@ -44,7 +42,6 @@ class App extends Component {
   onSubmit = () => {
     this.setState({
       weatherDetails: {},
-      loading: true,
       error: false
     });
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.searchBarInput}&appid=${APIKey}&units=metric`)
@@ -57,7 +54,6 @@ class App extends Component {
                 description: data.weather[0].main,
                 icon: data.weather[0].icon
               },
-              loading: false
             }
           )
         } else {
@@ -67,7 +63,6 @@ class App extends Component {
       .catch(err => {
         console.log(err);
         this.setState({
-            loading: false,
             error: true
         });
       })
@@ -75,16 +70,14 @@ class App extends Component {
 
   render() {
     let cardContent = <Preview />;
-    if(this.state.loading){
-      cardContent = <PacmanLoader size={150} />;
-    } else if (this.state.error) {
+    if (this.state.error) {
       cardContent = <ErrorNotice onClickHandler={this.tryAgainHandler} />;
     } else if (this.state.weatherDetails.temperature && this.state.weatherDetails.description !== '') {
       cardContent = <WeatherDetailsCard data={this.state.weatherDetails} city={this.state.searchBarInput} />;
     }
 
     return (
-      <div className="App">
+      <div className="App bg-moon-gray">
         <Header />
         <SearchBox 
           onChangeHandler = { this.searchBarHandler } 

@@ -5,11 +5,11 @@ const now = new Date();
 
 const WeatherDetailsCard = (props) => {
 	return(
-		<div className="mw5 center bg-lightest-blue br3 pa3 pa4-ns mv3 ba b--black-10">
+		<div className="mw5 center bg-near-white br3 pa3 pa4-ns mv3 ba b--black-50">
 		  <div className="tc">
 		    <img 
 		    	src={`http://openweathermap.org/img/wn/${props.data.icon}@2x.png`}
-		    	className="br-100 h4 w4 dib ba b--black-05 pa2" 
+		    	className="h4 w4 dib pa1 bg-light-silver br-100 b--black-50" 
 		    	title="weather icon" 
 		    	alt='Icon not available'
 		    />

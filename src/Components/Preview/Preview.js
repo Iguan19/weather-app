@@ -6,11 +6,11 @@ const now = new Date();
 
 const Preview = () => {
 	return(
-		<div className="mw5 center bg-lightest-blue br3 pa3 pa4-ns mv3 ba b--black-10">
+		<div className="mw5 center bg-near-white br3 pa3 pa4-ns mv3 ba b--black-50">
 		  <div className="tc">
 		    <img 
 		    	src={icon}
-		    	className="br-100 h4 w4 dib ba b--black-05 pa2" 
+		    	className="h-75 w-75 pa2 bg-light-silver br-100 ba b--black-50" 
 		    	title="weather icon" 
 		    	alt='weather icon'
 		    />
