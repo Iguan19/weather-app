@@ -12,7 +12,7 @@ const Header = () => {
 
 export default Header;
 
-{/** /// TACHYONS ///
+/** /// TACHYONS ///
 	.tracked	{ letter-spacing:  .1em; }
 	.normal	 { font-weight: normal; }
 	.b      { font-weight: bold; }
@@ -67,4 +67,4 @@ export default Header;
 	  t-column-group = table-column-group
 
 	
-**/}
+**/

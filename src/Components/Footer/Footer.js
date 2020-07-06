@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-      <div className="bg-black-90 pv3 ph3 pv4-ns ph4-m ph5-l">
+      <div className="bg-black-90 pv3 ph3 pv4-ns ph4-m ph5-l bottom-0">
         <nav className="link tr f7 fw3 tracked">
           <a className="b dim white dib mr3" href="https://github.com/Iguan19" title="Home">Created by Francisco Egea</a>
         </nav>
@@ -12,7 +12,7 @@ const Footer = () => {
 
 export default Footer;
 
-{/** /// TACHYONS ///
+/** /// TACHYONS ///
 	.tracked	{ letter-spacing:  .1em; }
 	.normal	 { font-weight: normal; }
 	.b      { font-weight: bold; }
@@ -67,4 +67,4 @@ export default Footer;
 	  t-column-group = table-column-group
 
 	
-**/}
+**/
