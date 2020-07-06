@@ -7,7 +7,7 @@ import ErrorNotice from '../../Components/ErrorNotice/ErrorNotice';
 import Preview from '../../Components/Preview/Preview';
 import './App.css';
 
-const APIKey = "3e0a1ade01bf9f4d59e46fa9515ee8d2";
+const APIKey = process.env.REACT_APP_API_KEY;
 
 class App extends Component {
   constructor(){
