@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-      <div className="bg-black-90 sticky ph3 pv3 pv4-ns ph4-m ph5-l">
+      <div className="bg-black-90 sticky ph3 pv3">
         <nav className="b f6 fw6 ttu tracked">
           <a className="link dim white dib mr3" href="http://localhost:3000" title="Home">Weather APP</a>
         </nav>

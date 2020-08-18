@@ -1,8 +1,9 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
-      <div className="bg-black-90 pv3 ph3 pv4-ns ph4-m ph5-l bottom-0">
+      <div className="footer bg-black-90 pv3 ph3 bottom-0">
         <nav className="link tr f7 fw3 tracked">
           <a className="b dim white dib mr3" href="https://github.com/Iguan19" title="Home">Created by Francisco Egea</a>
         </nav>

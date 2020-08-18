@@ -6,7 +6,7 @@ const now = new Date();
 
 const Preview = () => {
 	return(
-		<div className="mw5 center bg-near-white br3 pa3 pa4-ns mv3 ba b--black-50">
+		<div className="mw5 center bg-near-white br3 pa4 mv3 ba b--black-50">
 		  <div className="tc">
 		    <img 
 		    	src={icon}

@@ -1,3 +1,15 @@
 .App {
   text-align: center;
+  height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: #CCCCCC;
+	margin: 0;
+	padding: 0;
 }

@@ -77,7 +77,7 @@ class App extends Component {
     }
 
     return (
-      <div className="App bg-moon-gray">
+      <div className="App">
         <Header />
         <SearchBox 
           onChangeHandler = { this.searchBarHandler } 
