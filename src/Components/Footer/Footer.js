@@ -1,11 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import './Footer.scss';
 
 const Footer = () => {
   return (
-      <div className="footer bg-black-90 pv3 ph3 bottom-0">
-        <nav className="link tr f7 fw3 tracked">
-          <a className="b dim white dib mr3" href="https://github.com/Iguan19" title="Home">Created by Francisco Egea</a>
+      <div className="footer">
+        <nav className="nav">
+          <a className="link" href="https://github.com/Iguan19" title="GitHub">Created by Francisco Egea</a>
         </nav>
       </div>
   );
