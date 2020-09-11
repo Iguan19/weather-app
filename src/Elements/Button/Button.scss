@@ -1,0 +1,26 @@
+.button {
+	display: inline-block;
+	padding-left: 1rem; 
+	padding-right: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	font-size: .875rem;
+	text-decoration: none;
+	border-radius: 9999px;
+	border-width: 0px;
+	margin-bottom: .5rem;
+	color: #fff;
+	background-color: #19647E;
+
+		&:hover {
+			-webkit-transform: scale( 1.05 ); 
+			transform: scale( 1.05 );
+		}
+		
+		&:focus {
+			-webkit-transform: scale( 1.05 ); 
+			transform: scale( 1.05 );
+		}
+}
+
+

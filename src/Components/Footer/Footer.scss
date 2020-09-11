@@ -1,17 +1,19 @@
-.header {
+.footer {
   position: fixed;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 100%;
   background-color: black;
   padding: 1rem;
 }
 
-.headerNav {
-	text-align: center;
-	font-size: 1.25rem;
+.footerNav {
+	text-align: right;
+	margin-right: 1rem;
+	text-decoration: none;
+	letter-spacing: .1em;
 	font-weight: bold;
-	text-transform: uppercase;
+	font-size: .75rem;
 }
 
 .link {
