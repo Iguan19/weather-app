@@ -5,7 +5,7 @@ const Header = () => {
   return (
       <div className="header">
         <nav className="headerNav">
-          <a className="link" href="http://localhost:3000" title="Home">Weather APP</a>
+          <a className="link" href="https://iguan19.github.io/weather-app/" title="Home">Weather APP</a>
         </nav>
       </div>
   );
