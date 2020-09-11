@@ -1,10 +1,11 @@
 import React from 'react';
+import './InputField.scss';
 
 const Inputfield = ({ handleChange }) => {
 	return (
-    <div className='mt2 pa2 br3'>
+    <div className='inputField'>
       <input 
-        className='pa3 ba b--black-50 bg-near-white' 
+        className='input' 
         type='search' 
         placeholder='Enter City'
         onChange={ handleChange }

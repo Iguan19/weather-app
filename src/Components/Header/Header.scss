@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+}
+
+.headerNav {
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.link {
+	display: inline-block;
+	color: white;
+	&:hover {
+		opacity: 0.5;
+		transition: opacity .15s ease-in;
+	}
+}

@@ -1,10 +1,11 @@
 import React from 'react';
+import './Button.scss';
 
 const Button = (props) => {
 	return(
-		<div className="ph3">
+		<div>
   		<button 
-  		className="f6 grow no-underline br-pill bw0 ph3 pv2 mb2 dib white bg-dark-blue" 
+  		className="button" 
   		name="searchSubmit" 
       type="submit" 
       position="onForm"

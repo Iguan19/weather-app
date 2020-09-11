@@ -2,10 +2,11 @@ import React from 'react';
 
 import InputField from '../../Elements/InputField/InputField';
 import Button from '../../Elements/Button/Button';
+import './SearchBox.scss';
 
 const SearchBox = (props) => {
 	return(
-		<div>
+		<div className="searchbox">
 			<InputField 
 				handleChange = { props.onChangeHandler }
 				value = { props.onChangeHandler.value }
