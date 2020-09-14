@@ -33,7 +33,8 @@ class App extends Component {
       weatherDetails: {
         temperature: '',
         description: '??',
-        icon: ''
+        icon: '',
+        city: ''
       },
       error: false
     })
@@ -52,7 +53,8 @@ class App extends Component {
               weatherDetails: {
                 temperature: data.main.temp,
                 description: data.weather[0].main,
-                icon: data.weather[0].icon
+                icon: data.weather[0].icon,
+                city: data.name
               },
             }
           )
@@ -73,7 +75,7 @@ class App extends Component {
     if (this.state.error) {
       cardContent = <ErrorNotice onClickHandler={this.tryAgainHandler} />;
     } else if (this.state.weatherDetails.temperature && this.state.weatherDetails.description !== '') {
-      cardContent = <WeatherDetailsCard data={this.state.weatherDetails} city={this.state.searchBarInput} />;
+      cardContent = <WeatherDetailsCard data={this.state.weatherDetails} />;
     }
 
     return (
