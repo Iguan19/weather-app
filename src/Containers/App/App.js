@@ -17,7 +17,8 @@ class App extends Component {
       weatherDetails: {
         temperature: '',
         description: '??',
-        icon: ''
+        icon: '',
+        city: ''
       },
       error: false,
     }
