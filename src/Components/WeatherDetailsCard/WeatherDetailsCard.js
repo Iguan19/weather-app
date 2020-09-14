@@ -17,7 +17,7 @@ const WeatherDetailsCard = (props) => {
 		  </div>
 		  <div>
 		  	<div>
-					<span className='city'>{props.city}</span>
+					<span className='city'>{props.data.city}</span>
 				</div>
 				<div>
 					<span className='temperature'>{Math.round(props.data.temperature)} °C</span>
